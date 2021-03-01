@@ -1,7 +1,3 @@
-# Created by https://www.toptal.com/developers/gitignore/api/node,vuejs,vscode
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,vuejs,vscode
-
-### Node ###
 # Logs
 logs
 *.log
@@ -57,9 +53,6 @@ typings/
 # Optional eslint cache
 .eslintcache
 
-# Optional stylelint cache
-.stylelintcache
-
 # Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
@@ -78,11 +71,9 @@ typings/
 # dotenv environment variables file
 .env
 .env.test
-.env*.local
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
-.parcel-cache
 
 # Next.js build output
 .next
@@ -93,7 +84,7 @@ dist
 
 # Gatsby files
 .cache/
-# Comment in the public line in if your project uses Gatsby and not Next.js
+# Comment in the public line in if your project uses Gatsby and *not* Next.js
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
@@ -111,23 +102,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-# Stores VSCode versions used for testing VSCode extensions
-.vscode-test
-
-### vscode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
-
-### Vuejs ###
-# Recommended template: Node.gitignore
-
-dist/
-npm-debug.log
-yarn-error.log
-
-# End of https://www.toptal.com/developers/gitignore/api/node,vuejs,vscode
