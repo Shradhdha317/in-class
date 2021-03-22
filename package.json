@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "the server package of our application",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --watch server server/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
