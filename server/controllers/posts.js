@@ -1,6 +1,4 @@
-/* B"H
 
-*/
 const express = require('express');
 const users = require('../models/users');
 const model = require('../models/posts');
@@ -15,6 +13,11 @@ const app = express.Router();
             }else{
                 res.send( model.GetWall(req.user.handle) );
             }
+
+        }  )
+        .get('/feed', (req, res)=>{
+
+                res.send( model.GetFeed(req.user.handle) );
 
         }  )
         .get('/:post_id',(req, res)=> {
