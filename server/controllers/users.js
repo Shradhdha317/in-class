@@ -1,6 +1,4 @@
-/* B"H
 
-*/
 const express = require('express');
 const model = require('../models/users');
 const { LoginRequired  } = require('./security');
@@ -24,6 +22,13 @@ const app = express.Router();
         .post('/login', (req, res, next)=> { 
 
             model.Login(req.body.handle, req.body.password)
+            .then(user=> res.send( user  ))
+            .catch(next);
+
+        })
+        .post('/loginFB', (req, res, next)=> { 
+
+            model.LoginFB(req.body.access_token)
             .then(user=> res.send( user  ))
             .catch(next);
 
